@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Textutils </title>
+</head>
+<body>
+<h1>Welcomem to the text analyazer.</h1>
+<form action="/analyze" method="post">{% csrf_token %}
+<textarea name='text'style='width: 1344px; height: 160px;'> </textarea>
+
+    <input type="checkbox" name="removepunc">Remove Punctuation<br>
+    <input type="checkbox" name="fullcaps">Upper Case<br>
+    <input type="checkbox" name="newlineremover">newlineremove<br>
+    <input type="checkbox" name="extraspaveremover">extraspaveremove<br>
+    <input type="checkbox" name="countLetters">count letters<br>
+    <!--<input type="checkbox" name="removepunc">Remove Punctuation<br>-->
+    <!--<input type="checkbox" name="removepunc">Remove Punctuation<br>-->
+    <!--<input type="checkbox" name="removepunc">Remove Punctuation<br>-->
+
+
+<button type="submit">submit</button>
+</form>
+</body>
+</html>
